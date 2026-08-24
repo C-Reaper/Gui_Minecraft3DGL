@@ -355,7 +355,7 @@ void Setup(AglWindow* w){
 	Menu_Set(0);
 	Cubes = Vector_New(sizeof(Rect3));
 
-	Random_Get(Time_Nano());
+	Random_Set(Time_Nano());
 	World_Generate(World,WORLD_DX,WORLD_DY,WORLD_DZ);
 	Mesh_Reload();
     
